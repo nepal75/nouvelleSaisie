@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms" xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" x:Class="Saisie2.ModifierMatch">
+	<ContentPage.Content>
+        <StackLayout>
+            <Label x:Name="LeMatch"></Label>
+            <ListView x:Name="ListeJoueursTitulaires">
+                        <ListView.ItemTemplate>
+                            <DataTemplate>
+                                    <ViewCell>
+                                    <ViewCell.View>
+                                      <StackLayout Orientation="Horizontal" Padding="0,20,0,0">                                                  
+                                          <Label Text="{Binding nom}"></Label>
+                                          <Label Text="{Binding prenom}"></Label>
+                                    </StackLayout>
+                                    </ViewCell.View>
+                                    </ViewCell>
+                            </DataTemplate>
+                        </ListView.ItemTemplate>
+            </ListView>
+        <Button x:Name = "BoutonAjouter" Text = "Ajouter un titulaire" Clicked = "BoutonAjouter_Clicked"></Button>
+        <Button x:Name = "BoutonAnnuler" Text = "Retour" Clicked = "BoutonAnnuler_Clicked"></Button>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

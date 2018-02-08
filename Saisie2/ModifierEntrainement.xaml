@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms" xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" x:Class="Saisie2.ModifierEntrainement">
+	<ContentPage.Content>
+        <StackLayout>
+            <ListView x:Name="listJoueurs">
+                <ListView.ItemTemplate>
+                    <DataTemplate>
+                        <ViewCell>
+                            <ViewCell.View>
+                                <StackLayout Orientation="Horizontal" Padding="0,20,0,0">                                                  
+                                    <Label Text="{Binding First.nom}"></Label>
+                                    <Label Text="{Binding First.prenom}"></Label>
+                                    <Label Text="{Binding Second}"></Label>
+                                </StackLayout>
+                            </ViewCell.View>
+                        </ViewCell>
+                    </DataTemplate>
+                </ListView.ItemTemplate>
+            </ListView>
+        </StackLayout>
+	</ContentPage.Content>
+</ContentPage>

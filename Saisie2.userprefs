@@ -1,0 +1,22 @@
+﻿<Properties StartupConfiguration="{9334C1E7-8E46-4F87-A5B3-7BA30FE76353}|Default">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Saisie2/nouvIndexJoueur.xaml.cs">
+    <Files>
+      <File FileName="Saisie2/nouvIndexJoueur.xaml.cs" Line="22" Column="14" />
+      <File FileName="Saisie2/MainPage.xaml.cs" Line="25" Column="65" />
+      <File FileName="Saisie2/nouvIndexEntrainement.xaml.cs" Line="33" Column="5" />
+      <File FileName="Saisie2/ModifierJoueur.xaml" Line="89" Column="1" />
+      <File FileName="Saisie2/ModifierJoueur.xaml.cs" Line="61" Column="22" />
+      <File FileName="Saisie2/SaisirJoueur.xaml.cs" Line="51" Column="21" />
+      <File FileName="Saisie2/Joueur.cs" Line="22" Column="92" />
+      <File FileName="Saisie2/App.xaml" Line="7" Column="1" />
+      <File FileName="Saisie2/App.xaml.cs" Line="37" Column="10" />
+    </Files>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.Ide.ItemProperties.Saisie2.Droid PreferredExecutionTarget="Android.12160c72ce103103" />
+  <MultiItemStartupConfigurations />
+</Properties>

@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms" xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" x:Class="Saisie2.nouvIndexMatchs">
+	<ContentPage.Content>
+        <StackLayout>
+            <Button x:Name="nouvMatch" Text="Ajouter un nouveau Match" Clicked="nouvMatch_Clicked"></Button>
+            <ListView x:Name="listView2" ItemSelected="MatchSelected">
+                <ListView.ItemTemplate>
+                    <DataTemplate>
+                        <ViewCell>
+                            <ViewCell.View>
+                                <StackLayout Orientation="Horizontal" Padding="0,20,0,0">                                                  
+                                    <Label Text="{Binding equipe}"></Label>
+                                </StackLayout>
+                            </ViewCell.View>
+                        </ViewCell>
+                    </DataTemplate>
+                </ListView.ItemTemplate>
+            </ListView>
+        </StackLayout>
+	</ContentPage.Content>
+</ContentPage>

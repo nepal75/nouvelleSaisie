@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms" xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" x:Class="Saisie2.SaisirJoueur">
+	<ContentPage.Content>
+        <StackLayout>
+            <TableView Intent="Form">
+                <TableRoot>
+                    <TableSection Title="Nouveau Joueur">
+
+                        <!-- NOM -->
+                        <EntryCell x:Name="entryNom" Label="Nom : " />
+
+                        <!-- PRENOM -->
+                        <EntryCell x:Name="entryPrenom" Label="Prenom : "/>
+
+                        <!-- POSTE -->
+                        <ViewCell>
+                            <StackLayout Orientation="Horizontal"  HorizontalOptions="Fill">
+                                <StackLayout Orientation="Vertical"  HorizontalOptions="Fill">
+                                    <Label Text="Poste : "></Label>
+                                </StackLayout>
+                                <StackLayout Orientation="Vertical"  HorizontalOptions="FillAndExpand">
+                                    <Picker x:Name="choixPoste"></Picker>
+                                </StackLayout>
+                            </StackLayout>
+                        </ViewCell>
+
+                        <!-- CLUB -->
+                        <ViewCell>
+                            <StackLayout Orientation="Horizontal"  HorizontalOptions="Fill">
+                                <StackLayout Orientation="Vertical"  HorizontalOptions="Fill">
+                                    <Label Text="Club : "></Label>
+                                </StackLayout>
+                                <StackLayout Orientation="Vertical"  HorizontalOptions="FillAndExpand">
+                                    <Picker x:Name="choixClub"></Picker>
+                                </StackLayout>
+                            </StackLayout>
+                        </ViewCell>
+
+                        <!-- LICENCE -->
+                        <EntryCell x:Name="entryLicence" Label="Licence : " />
+
+                        <!-- STATUT LICENCE -->
+                        <ViewCell>
+                            <StackLayout Orientation="Horizontal"  HorizontalOptions="Fill">
+                                <StackLayout Orientation="Vertical"  HorizontalOptions="Fill">
+                                    <Label Text="Statut Licence : "></Label>
+                                </StackLayout>
+                                <StackLayout Orientation="Vertical"  HorizontalOptions="FillAndExpand">
+                                    <Picker x:Name="choixStatutLicence"></Picker>
+                                </StackLayout>
+                            </StackLayout>
+                        </ViewCell>
+
+                        <!-- ADRESSE -->
+                        <EntryCell x:Name="entryAdresse" Label="Adresse : " />
+
+                        <!-- VILLE -->
+                        <ViewCell>
+                            <StackLayout Orientation="Horizontal"  HorizontalOptions="Fill">
+                                <StackLayout Orientation="Vertical"  HorizontalOptions="Fill">
+                                    <Label Text="Ville : "></Label>
+                                </StackLayout>
+                                <StackLayout Orientation="Vertical"  HorizontalOptions="FillAndExpand">
+                                    <Picker x:Name="choixVille"></Picker>
+                                </StackLayout>
+                            </StackLayout>
+                        </ViewCell>
+
+                        <!-- EMAIL -->
+                        <EntryCell x:Name="entryEmail" Label="Email : " />
+
+                        <!-- TELEPHONE -->
+                        <EntryCell x:Name="entryTelephone" Label="Telephone : " />
+
+                        <!-- DATE DE NAISSANCE -->
+                        <EntryCell x:Name="entryDateNaissance" Label="Date de naissance : " />
+                        
+                    </TableSection>
+                </TableRoot>
+            </TableView>
+
+            <Button x:Name = "BoutonValider" Text = "Valider" Clicked = "BoutonValider_Clicked"></Button>
+
+            <Button x:Name = "BoutonAnnuler" Text = "Annuler" Clicked = "BoutonAnnuler_Clicked"></Button>
+
+        </StackLayout>
+	</ContentPage.Content>
+</ContentPage>
