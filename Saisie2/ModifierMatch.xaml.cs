@@ -17,10 +17,10 @@ namespace Saisie2
             leMatch = m;
 
             //ON FAIT QUE LE LABEL LeMatch EST EN TEXT L'EQUIPE DU MATCH RECU EN PARAMETRE
-            LeMatch.Text = leMatch.equipe;
+            LeMatch.Text = leMatch.getEquipeReceveur();
 
             //ON ALIMENTE LA LISTVIEW
-            ListeJoueursTitulaires.ItemsSource = m.getListe();
+            ListeJoueursTitulaires.ItemsSource = m.getListeJoueursTitulaires();
            
         }
 

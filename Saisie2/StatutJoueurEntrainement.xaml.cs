@@ -19,8 +19,8 @@ namespace Saisie2
             entrainementVise = e;
 
             //ON REMPLIT LE PICKER AVEC LES ETATS POSSIBLE (PRESENT/ABSENT)
-            foreach(string etat in Listes.listeStatutEntrainement){
-                Etat.Items.Add(etat);
+            foreach(StatutEntrainement etat in App.listeStatutEntrainement){
+                Etat.Items.Add(etat.getStatut());
             }
         }
 

@@ -90,7 +90,6 @@
     <Compile Include="SaisirJoueur.xaml.cs">
       <DependentUpon>SaisirJoueur.xaml</DependentUpon>
     </Compile>
-    <Compile Include="Listes.cs" />
     <Compile Include="SaisirMatch.xaml.cs">
       <DependentUpon>SaisirMatch.xaml</DependentUpon>
     </Compile>
@@ -124,6 +123,12 @@
     <Compile Include="ModifierJoueur.xaml.cs">
       <DependentUpon>ModifierJoueur.xaml</DependentUpon>
     </Compile>
+    <Compile Include="Participation.cs" />
+    <Compile Include="Poste.cs" />
+    <Compile Include="Score.cs" />
+    <Compile Include="Scoreur.cs" />
+    <Compile Include="Ville.cs" />
+    <Compile Include="StatutEntrainement.cs" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="Xamarin.Forms.Core">

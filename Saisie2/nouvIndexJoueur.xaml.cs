@@ -11,7 +11,7 @@ namespace Saisie2
         {
             InitializeComponent();
 
-            listView.ItemsSource = Listes.listeJoueurs;
+            listView.ItemsSource = App.listeJoueurs;
         }
 
         async void JoueurSelected(object sender, SelectedItemChangedEventArgs e)

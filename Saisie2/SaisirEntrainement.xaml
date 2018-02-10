@@ -8,8 +8,8 @@
                                     <ViewCell>
                                     <ViewCell.View>
                                       <StackLayout Orientation="Horizontal" Padding="0,20,0,0">                                                  
-                                          <Label Text="{Binding nom}"></Label>
-                                          <Label Text="{Binding prenom}"></Label>
+                                          <Label Text="{Binding Nom}"></Label>
+                                          <Label Text="{Binding Prenom}"></Label>
                                     </StackLayout>
                                     </ViewCell.View>
                                     </ViewCell>

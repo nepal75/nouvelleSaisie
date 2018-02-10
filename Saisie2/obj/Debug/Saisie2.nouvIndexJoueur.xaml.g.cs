@@ -11,7 +11,7 @@
 namespace Saisie2 {
     
     
-    [global::Xamarin.Forms.Xaml.XamlFilePathAttribute("/Users/Antonin/Projects/Saisie2/Saisie2/nouvIndexJoueur.xaml")]
+    [global::Xamarin.Forms.Xaml.XamlFilePathAttribute("/Users/Antonin/GitHub/nouvelleSaisie/Saisie2/nouvIndexJoueur.xaml")]
     public partial class nouvIndexJoueur : global::Xamarin.Forms.ContentPage {
         
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Xamarin.Forms.Build.Tasks.XamlG", "0.0.0.0")]

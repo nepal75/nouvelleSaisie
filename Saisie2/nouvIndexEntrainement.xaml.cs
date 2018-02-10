@@ -11,7 +11,7 @@ namespace Saisie2
         {
             InitializeComponent();
 
-            listView3.ItemsSource = Listes.listeEntrainement;
+            listView3.ItemsSource = App.listeEntrainement;
         }
 
         async void nouvEntrainement_Clicked(object sender, EventArgs e)

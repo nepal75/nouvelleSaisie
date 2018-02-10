@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections.Generic;
 
 using Xamarin.Forms;
 
@@ -11,23 +12,23 @@ namespace Saisie2
             InitializeComponent();
 
             //REMPLISSAGE DES PICKERS
-            foreach(string poste in Listes.listePoste){
-                choixPoste.Items.Add(poste);
+            foreach(Poste poste in App.listePostes){
+                choixPoste.Items.Add(poste.getIntitulePoste());
             }
 
-            foreach (string club in Listes.listeClubs)
+            foreach (string club in App.listeClubs)
             {
                 choixClub.Items.Add(club);
             }
 
-            foreach (string statutLicense in Listes.listeStatutLicence)
+            foreach (string statutLicense in App.listeStatutLicence)
             {
                 choixStatutLicence.Items.Add(statutLicense);
             }
 
-            foreach (string ville in Listes.listeVilles)
+            foreach (Ville ville in App.listeVilles)
             {
-                choixVille.Items.Add(ville);
+                choixVille.Items.Add(ville.getNomVille());
             }
         }
 
@@ -37,20 +38,34 @@ namespace Saisie2
             //ON RECUPERE TOUS LES ATTRIBUTS
             string nom = entryNom.Text;
             string prenom = entryPrenom.Text;
-            string poste = (string)choixPoste.SelectedItem;
             string club = (string)choixClub.SelectedItem;
             string licence = entryLicence.Text;
             string statutLicence = (string)choixStatutLicence.SelectedItem;
             string adresse = entryAdresse.Text;
-            string ville = (string)choixVille.SelectedItem;
             string email = entryEmail.Text;
             string telephone = entryTelephone.Text;
             string dateNaissance = entryDateNaissance.Text;
 
+            Poste poste = null;
+            Ville ville = null;
+
+            if (choixPoste.SelectedItem != null)
+            {
+                poste = App.listePostes.Find(x => x.getIntitulePoste() == (string)choixPoste.SelectedItem);
+            }
+
+            if (choixVille.SelectedItem != null)
+            {
+                ville = App.listeVilles.Find(x => x.getNomVille() == (string)choixVille.SelectedItem);
+            }
+
+
             //ON CREE LE NOUVEAU JOUEUR
-            Joueur j = new Joueur(nom, prenom, poste, club,licence, 
-                                  statutLicence, adresse, ville,
-                                  email, telephone, dateNaissance);
+            Joueur j = new Joueur(licence,nom, prenom, club,statutLicence, 
+                                  adresse, email,  
+                                   telephone, dateNaissance);
+            j.ajouterPoste(poste);
+            j.setVille(ville);
 
             //RETOUR SUR LA PAGE D'ACCUEIL
             await Navigation.PushAsync(new MainPage());

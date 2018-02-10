@@ -9,7 +9,7 @@
                         <ViewCell>
                             <ViewCell.View>
                                 <StackLayout Orientation="Horizontal" Padding="0,20,0,0">                                                  
-                                    <Label Text="{Binding equipe}"></Label>
+                                    <Label Text="{Binding EquipeReceveuse}"></Label>
                                 </StackLayout>
                             </ViewCell.View>
                         </ViewCell>

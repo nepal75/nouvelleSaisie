@@ -17,7 +17,7 @@ namespace Saisie2
             leMatch = m;
 
             //ON ALIMENTE LA LISTVIEW
-            listView.ItemsSource = Listes.listeJoueurs;
+            listView.ItemsSource = App.listeJoueurs;
         }
 
         async void BoutonAnnuler_Clicked(object sender, EventArgs e)

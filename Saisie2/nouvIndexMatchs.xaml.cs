@@ -11,7 +11,7 @@ namespace Saisie2
         {
             InitializeComponent();
 
-            listView2.ItemsSource = Listes.listeMatches;
+            listView2.ItemsSource = App.listeMatches;
         }
 
         async void nouvMatch_Clicked(object sender, EventArgs e)

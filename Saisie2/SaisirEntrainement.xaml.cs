@@ -18,7 +18,7 @@ namespace Saisie2
             entrainementSaisi = e;
 
             //ON DUPLIQUE LA LISTE DE TOUS LES JOUEURS
-            foreach (Joueur j in Listes.listeJoueurs)
+            foreach (Joueur j in App.listeJoueurs)
             {
                 listeJoueurAffiche.Add(j);
             }

@@ -5,7 +5,7 @@ namespace Saisie2
     public class Entrainement
     {
         //ATTIBUTS
-        public DateTime date { get; }
+        public DateTime date { get; set; }
 
         public List<MonTuple<Joueur, string>> listeJoueurEntrainement { get; set; }
 
@@ -15,7 +15,7 @@ namespace Saisie2
             //POUR AVOIR LA DATE ET HEURE SYSTEME
             date = DateTime.Now.ToLocalTime();
             listeJoueurEntrainement = new List<MonTuple<Joueur, string>>();
-            Listes.listeEntrainement.Add(this);
+            App.listeEntrainement.Add(this);
         }
 
         //METHODES
